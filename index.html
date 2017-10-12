@@ -1,16 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!Doctype html>
-<html>
 <head>
-	<title>Aaron's Site</title>
-	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
-	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>web调取摄像头</title>
 </head>
+
 <body>
-<!--  内容  -->
-<div class="container main"></div>
-<script src="/wp-content/themes/runoob/assets/js/main.js?v=1.147"></script>
-<script src="//static.runoob.com/assets/libs/hl/run_prettify.js"></script> 
+    <audio src=""></audio>
+    <script>
+        if (navigator.mediaDevices === undefined) {
+            navigator.mediaDevices = {};
+        }
+        if (navigator.mediaDevices.getUserMedia === undefined) {
+            navigator.mediaDevices.getUserMedia = function(constraints) {
+                var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+                if (!getUserMedia) {
+                    return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
+                }
+                return new Promise(function(resolve, reject) {
+                    getUserMedia.call(navigator, constraints, resolve, reject);
+                });
+            }
+        }
+        window.URL = (window.URL || window.webkitURL || window.mozURL || window.msURL);
+        var mediaOpts = {
+            audio: true,
+            video: false,
+        }
+
+        function successFunc(stream) {
+            var audio = document.querySelector('audio');
+            if ("srcObject" in audio) {
+                audio.srcObject = stream
+            } else {
+                audio.src = window.URL && window.URL.createObjectURL(stream) || stream
+            }
+            audio.play();
+        }
+
+        function errorFunc(err) {
+            alert(err.name);
+        }
+
+        navigator.getUserMedia(mediaOpts, successFunc, errorFunc);
+
+
+        var p = navigator.mediaDevices.getUserMedia({
+            audio: true,
+            video: true
+        });
+
+        p.then(function(mediaStream) {
+            var video = document.querySelector('video');
+            video.src = window.URL.createObjectURL(mediaStream);
+            video.onloadedmetadata = function(e) {
+                // Do something with the video here.
+            };
+        });
+
+        p.catch(function(err) {
+            console.log(err.name);
+        }); // always check for errors at the end.
+    </script>
 </body>
+
 </html>
