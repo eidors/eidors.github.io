@@ -32,32 +32,197 @@
             position: absolute;
             width: 66px;
             height: 120px;
-            background-color: #008000;
+            /*background-color: #008000;*/
         }
         
-        .lanren::before {
+        .Icons-Other {
+            background-color: #95D34E;
+        }
+        
+        .Icons-Game {
+            background-color: #345FE0;
+        }
+        
+        .Icons-Cartoon {
+            background-color: #2AB6CE;
+        }
+        
+        .Icons-Fiction {
+            background-color: #95D34E;
+        }
+        
+        .Icons-Audio {
+            background-color: #355FDE;
+        }
+        
+        .Icons-Video {
+            background-color: #29B6CE;
+        }
+        
+        .Icons-Other::after {
             content: "";
             width: 0;
             height: 0;
             position: absolute;
             left: -35px;
             top: 0;
-            border-right: 35px solid #008000;
             border-top: 60px solid transparent;
             border-bottom: 60px solid transparent;
+            border-right: 35px solid #95D34E;
         }
         
-        .lanren::after {
+        .Icons-Game::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-right: 35px solid #345FE0;
+        }
+        
+        .Icons-Cartoon::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-right: 35px solid #2AB6CE;
+        }
+        
+        .Icons-Fiction::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-right: 35px solid #95D34E;
+        }
+        
+        .Icons-Audio::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-right: 35px solid #355FDE;
+        }
+        
+        .Icons-Video::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-right: 35px solid #29B6CE;
+        }
+        
+        .Icons-Other::before {
             content: "";
             width: 0;
             height: 0;
             position: absolute;
             right: -35px;
             top: 0;
-            border-left: 35px solid #008000;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 35px solid #95D34E;
+        }
+        
+        .Icons-Game::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 35px solid #345FE0;
+        }
+        
+        .Icons-Cartoon::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 35px solid #2AB6CE;
+        }
+        
+        .Icons-Fiction::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 35px solid #95D34E;
+        }
+        
+        .Icons-Audio::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 35px solid #355FDE;
+        }
+        
+        .Icons-Video::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 35px solid #29B6CE;
+        }
+        /*#Main_Menu .lanren::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
             border-top: 60px solid transparent;
             border-bottom: 60px solid transparent;
         }
+        
+        #Main_Menu .lanren::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }*/
     </style>
 </head>
 
@@ -130,7 +295,8 @@
             resizeTimer = setTimeout(function() {
                 $objThis.animate({
                     left: valLeft,
-                    top: valTop
+                    top: valTop,
+                    duration: "slow"
                 });
                 IsAnimate = true;
             }, valDelay);
