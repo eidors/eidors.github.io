@@ -8,14 +8,10 @@
 </head>
 
 <body>
+    <div class="header">涛涛的博客 ╮(╯▽╰)╭ </div>
     <div id="mainPage">
-        <video width="500" height="700" controls="controls">
-            <source src="" type="video/ogg">
-            <source src="" type="video/mp4">
-        </video>
-
-        <audio src=""></audio>
-
+        <a href="https://eidors.github.io/compass/">指东西针</a>
+        <a href="https://eidors.github.io/Direct_Seeding_Test/">浏览器摄像头和话筒权限设置</a>
     </div>
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
@@ -23,79 +19,6 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-        if (navigator.mediaDevices === undefined) {
-            navigator.mediaDevices = {};
-        }
-        if (navigator.mediaDevices.getUserMedia === undefined) {
-            navigator.mediaDevices.getUserMedia = function(constraints) {
-                var getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
-                if (!getUserMedia) {
-                    return Promise.reject(new Error('getUserMedia is not implemented in this browser'));
-                }
-                return new Promise(function(resolve, reject) {
-                    getUserMedia.call(navigator, constraints, resolve, reject);
-                });
-            }
-        }
-        window.URL = (window.URL || window.webkitURL || window.mozURL || window.msURL);
-        var mediaOpts = {
-            audio: true,
-            video: true,
-        }
-
-        function successFunc(stream) {
-            var audio = document.querySelector('audio');
-            var video = document.querySelector('video');
-            if ("srcObject" in audio) {
-                audio.srcObject = stream;
-            } else {
-                audio.src = window.URL && window.URL.createObjectURL(stream) || stream;
-            }
-            audio.play();
-            if ("srcObject" in video) {
-                video.srcObject = stream;
-            } else {
-                video.src = window.URL && window.URL.createObjectURL(stream) || stream;
-            }
-            video.play();
-        }
-
-        function errorFunc(err) {
-            alert(err.name);
-        }
-
-
-
-        $(document).on("pageinit", "#mainPage", function() {
-            $("video").on("tap", function() {
-                navigator.getUserMedia(mediaOpts, successFunc, errorFunc);
-            });
-        });
-        navigator.getUserMedia(mediaOpts, successFunc, errorFunc);
-        // var p = navigator.mediaDevices.getUserMedia({
-        //     audio: true,
-        //     video: true
-        // });
-
-        // p.then(function(mediaStream) {
-        //     var video = document.querySelector('video');
-        //     video.src = window.URL.createObjectURL(mediaStream);
-        //     video.onloadedmetadata = function(e) {
-        //         // Do something with the video here.
-        //     };
-        // });
-
-        // p.then(function(mediaStream) {
-        //     var video = document.querySelector('video');
-        //     video.src = window.URL.createObjectURL(mediaStream);
-        //     video.onloadedmetadata = function(e) {
-        //         // Do something with the video here.
-        //     };
-        // });
-
-        // p.catch(function(err) {
-        //     console.log(err.name);
-        // }); // always check for errors at the end.
     </script>
 </body>
 
