@@ -5,20 +5,142 @@
     <meta charset="UTF-8">
     <title>0.0</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="header">涛涛的博客 ╮(╯▽╰)╭ </div>
-    <div id="mainPage">
-        <a href="https://eidors.github.io/compass/">指东西针</a>
-        <a href="https://eidors.github.io/Direct_Seeding_Test/">浏览器摄像头和话筒权限设置</a>
-    </div>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        if (typeof SalLocalLabels === 'undefined') {
+            window.SalLocalLabels = {};
+        }
+        SalLocalLabels["RTXT_SIMPLE_CONFIRMATION"] = "Simple confirmation";
+        SalLocalLabels["RTXT_SELECT_ONE_STRUCTURE"] = "Please select at least one structure.";
+        SalLocalLabels["RTXT_CANCEL"] = "Cancel";
+        SalLocalLabels["RTXT_OK"] = "OK";
+    </script>
+    <style>
+        #Main_Menu {
+            position: fixed;
+            right: 150px;
+            bottom: 150px;
+        }
+        
+        .lanren {
+            position: absolute;
+            width: 66px;
+            height: 120px;
+            background-color: #008000;
+        }
+        
+        .lanren::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: -35px;
+            top: 0;
+            border-right: 35px solid #008000;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }
+        
+        .lanren::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -35px;
+            top: 0;
+            border-left: 35px solid #008000;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">涛涛的博客 ╮(╯▽╰)╭ </div>
+    <div id="mainPage">
+        <a href="https://eidors.github.io/compass/" target="_blank">指东西针</a>
+        <a href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">浏览器摄像头和话筒权限设置</a>
+    </div>
+    <div id="Main_Menu" class="Main-Menu">
+        <div id="Icons_Other" class="lanren Icons-Other">Other</div>
+        <div id="Icons_Game" class="lanren Icons-Game">Game</div>
+        <div id="Icons_Cartoon" class="lanren Icons-Cartoon">Cartoon</div>
+        <div id="Icons_Fiction" class="lanren Icons-Fiction">Fiction</div>
+        <div id="Icons_Audio" class="lanren Icons-Audio">Audio</div>
+        <div id="Icons_Video" class="lanren Icons-Video">Video</div>
+        <!--<div id="Icons_IP" class="lanren Icons-Video">IP</div>-->
+    </div>
     <script>
+        var resizeTimer = null;
+        var IsAnimate = true;
+        $(function() {
+            // $Icons_IP = $("#Icons_IP");
+            var $Icons_Video = $("#Icons_Video");
+            var $Icons_Audio = $("#Icons_Audio");
+            var $Icons_Fiction = $("#Icons_Fiction");
+            var $Icons_Cartoon = $("#Icons_Cartoon");
+            var $Icons_Game = $("#Icons_Game");
+            var $Icons_Other = $("#Icons_Other");
+            $Icons_Video.draggable({
+                revert: true,
+                opacity: 0.7,
+                // distance: 20,
+                // delay: 1000,
+                start: function() {
+                    //$Icons_IP.hide();
+                },
+                drag: function() {
+                    var valLeft = $Icons_Video.css("left");
+                    var valTop = $Icons_Video.css("top");
+                    delayAnimate($Icons_Audio, valLeft, valTop, 100);
+                    delayAnimate($Icons_Fiction, valLeft, valTop, 200);
+                    delayAnimate($Icons_Cartoon, valLeft, valTop, 300);
+                    delayAnimate($Icons_Game, valLeft, valTop, 400);
+                    delayAnimate($Icons_Other, valLeft, valTop, 500);
+                },
+                stop: function() {
+                    var valLeft = $Icons_Video.css("left");
+                    var valTop = $Icons_Video.css("top");
+                    reStoreIcon($Icons_Audio, valLeft, valTop, 0);
+                    reStoreIcon($Icons_Fiction, valLeft, valTop, 100);
+                    reStoreIcon($Icons_Cartoon, valLeft, valTop, 200);
+                    reStoreIcon($Icons_Game, valLeft, valTop, 300);
+                    reStoreIcon($Icons_Other, valLeft, valTop, 400);
+                }
+            });
+        });
+
+        function delayAnimate($objThis, valLeft, valTop, valDelay) {
+            var resizeTimer = null;
+            resizeTimer = setTimeout(function() {
+                $objThis.css("left", valLeft);
+                $objThis.css("top", valTop);
+                IsAnimate = true;
+            }, valDelay);
+        }
+
+        function reStoreIcon($objThis, valLeft, valTop, valDelay) {
+            // var $Icons_Video = $("#Icons_Video");
+            // var $Icons_Audio = $("#Icons_Audio");
+            // var $Icons_Fiction = $("#Icons_Fiction");
+            // var $Icons_Cartoon = $("#Icons_Cartoon");
+            // var $Icons_Game = $("#Icons_Game");
+            // var $Icons_Other = $("#Icons_Other");
+            var resizeTimer = null;
+            resizeTimer = setTimeout(function() {
+                $objThis.animate({
+                    left: valLeft,
+                    top: valTop
+                });
+                IsAnimate = true;
+            }, valDelay);
+        }
     </script>
 </body>
 
