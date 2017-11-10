@@ -1,0 +1,344 @@
+.opacity-0 {
+    opacity: 0;
+}
+
+.open-Main-Menu {
+    position: fixed;
+    line-height: 120px;
+    z-index: 1050;
+    right: 50%;
+    bottom: 50%;
+    margin-right: 33px;
+    margin-bottom: 120px;
+    animation: openMainMenu 1s;
+    /* Safari 与 Chrome */
+    -webkit-animation: openMainMenu 1s;
+}
+
+@keyframes openMainMenu {
+    from {
+        right: 200px;
+        bottom: 200px;
+    }
+    to {
+        right: 50%;
+        bottom: 50%;
+    }
+}
+
+@-webkit-keyframes openMainMenu {
+    from {
+        right: 200px;
+        bottom: 200px;
+    }
+    to {
+        right: 50%;
+        bottom: 50%;
+    }
+}
+
+.open-Main-Menu .Icons-Video {
+    left: 0px;
+    top: -160px;
+    opacity: 1;
+    animation: openVideo 1s;
+    /* Safari 与 Chrome */
+    -webkit-animation: openVideo 1s;
+}
+
+@keyframes openVideo {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 0px;
+        top: -160px;
+    }
+}
+
+@-webkit-keyframes openVideo {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 0px;
+        top: -160px;
+    }
+}
+
+.open-Main-Menu .Icons-Audio {
+    left: 138px;
+    top: -80px;
+    opacity: 1;
+    animation: openAudio 1s;
+    /* Safari 与 Chrome */
+    -webkit-animation: openAudio 1s;
+}
+
+@keyframes openAudio {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 138px;
+        top: -80px;
+    }
+}
+
+@-webkit-keyframes openAudio {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 138px;
+        top: -80px;
+    }
+}
+
+.open-Main-Menu .Icons-Fiction {
+    left: 138px;
+    top: 80px;
+    opacity: 1;
+    animation: openFiction 1s;
+    -webkit-animation: openFiction 1s;
+}
+
+@keyframes openFiction {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 138px;
+        top: 80px;
+    }
+}
+
+@-webkit-keyframes openFiction {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 138px;
+        top: 80px;
+    }
+}
+
+.open-Main-Menu .Icons-Cartoon {
+    left: 0px;
+    top: 160px;
+    opacity: 1;
+    animation: openCartoon 1s;
+    -webkit-animation: openCartoon 1s;
+}
+
+@keyframes openCartoon {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 0px;
+        top: 160px;
+    }
+}
+
+@-webkit-keyframes openCartoon {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: 0px;
+        top: 160px;
+    }
+}
+
+.open-Main-Menu .Icons-Game {
+    left: -138px;
+    top: 80px;
+    opacity: 1;
+    animation: openGame 1s;
+    -webkit-animation: openGame 1s;
+}
+
+@keyframes openGame {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: -138px;
+        top: 80px;
+    }
+}
+
+@-webkit-keyframes openGame {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: -138px;
+        top: 80px;
+    }
+}
+
+.open-Main-Menu .Icons-Other {
+    left: -138px;
+    top: -80px;
+    opacity: 1;
+    animation: openOther 1s;
+    -webkit-animation: openOther 1s;
+}
+
+@keyframes openOther {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: -138px;
+        top: -80px;
+    }
+}
+
+@-webkit-keyframes openOther {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: -138px;
+        top: -80px;
+    }
+}
+
+.Main-Menu {
+    position: fixed;
+    right: 200px;
+    bottom: 200px;
+    line-height: 120px;
+    z-index: 1050;
+    margin-right: 33px;
+    margin-bottom: 120px;
+}
+
+.lanren {
+    position: absolute;
+    width: 66px;
+    height: 120px;
+    color: white;
+    font-size: 20px;
+}
+
+.lanren::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+
+.lanren::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -35px;
+    top: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+
+.Icons-Other {
+    background-color: #95D34E;
+}
+
+.Icons-Game {
+    background-color: #345FE0;
+}
+
+.Icons-Cartoon {
+    background-color: #2AB6CE;
+}
+
+.Icons-Fiction {
+    background-color: #95D34E;
+}
+
+.Icons-Audio {
+    background-color: #355FDE;
+}
+
+.Icons-Video {
+    background-color: #29B6CE;
+}
+
+.Icons-IP {
+    background-color: #19274D;
+}
+
+.Icons-IP::after {
+    border-right: 35px solid #19274D;
+}
+
+.Icons-IP::before {
+    border-left: 35px solid #19274D;
+}
+
+.Icons-Other::after {
+    border-right: 35px solid #95D34E;
+}
+
+.Icons-Game::after {
+    border-right: 35px solid #345FE0;
+}
+
+.Icons-Cartoon::after {
+    border-right: 35px solid #2AB6CE;
+}
+
+.Icons-Fiction::after {
+    border-right: 35px solid #95D34E;
+}
+
+.Icons-Audio::after {
+    border-right: 35px solid #355FDE;
+}
+
+.Icons-Video::after {
+    border-right: 35px solid #29B6CE;
+}
+
+.Icons-Other::before {
+    border-left: 35px solid #95D34E;
+}
+
+.Icons-Game::before {
+    border-left: 35px solid #345FE0;
+}
+
+.Icons-Cartoon::before {
+    border-left: 35px solid #2AB6CE;
+}
+
+.Icons-Fiction::before {
+    border-left: 35px solid #95D34E;
+}
+
+.Icons-Audio::before {
+    border-left: 35px solid #355FDE;
+}
+
+.Icons-Video::before {
+    border-left: 35px solid #29B6CE;
+}
