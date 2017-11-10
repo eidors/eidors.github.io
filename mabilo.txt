@@ -6,10 +6,10 @@
     <title>0.0</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-    <!-- jQueryÊñá‰ª∂„ÄÇÂä°ÂøÖÂú®bootstrap.min.js ‰πãÂâçÂºïÂÖ• -->
+    <!-- jQueryŒƒº˛°£ŒÒ±ÿ‘⁄bootstrap.min.js ÷Æ«∞“˝»Î -->
     <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
-    <!-- ÊúÄÊñ∞ÁöÑ Bootstrap Ê†∏ÂøÉ JavaScript Êñá‰ª∂ -->
+    <!-- ◊Ó–¬µƒ Bootstrap ∫À–ƒ JavaScript Œƒº˛ -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://raw.githubusercontent.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js"></script>
     <script type="text/javascript">
@@ -28,17 +28,17 @@
         
         #Main_Menu {
             position: fixed;
-            right: 200px;
-            bottom: 200px;
-            line-height: 120px;
+            right: 300px;
+            bottom: 300px;
+            line-height: 240px;
         }
         
         .lanren {
             position: absolute;
-            width: 66px;
-            height: 120px;
+            width: 132px;
+            height: 240px;
             color: white;
-            font-size: 20px;
+            font-size: 40px;
         }
         
         .lanren::after {
@@ -46,10 +46,10 @@
             width: 0;
             height: 0;
             position: absolute;
-            left: -35px;
+            left: -70px;
             top: 0;
-            border-top: 60px solid transparent;
-            border-bottom: 60px solid transparent;
+            border-top: 120px solid transparent;
+            border-bottom: 120px solid transparent;
         }
         
         .lanren::before {
@@ -57,10 +57,10 @@
             width: 0;
             height: 0;
             position: absolute;
-            right: -35px;
+            right: -70px;
             top: 0;
-            border-top: 60px solid transparent;
-            border-bottom: 60px solid transparent;
+            border-top: 120px solid transparent;
+            border-bottom: 120px solid transparent;
         }
         
         .Icons-Other {
@@ -92,66 +92,66 @@
         }
         
         .Icons-IP::after {
-            border-right: 35px solid #19274D;
+            border-right: 70px solid #19274D;
         }
         
         .Icons-IP::before {
-            border-left: 35px solid #19274D;
+            border-left: 70px solid #19274D;
         }
         
         .Icons-Other::after {
-            border-right: 35px solid #95D34E;
+            border-right: 70px solid #95D34E;
         }
         
         .Icons-Game::after {
-            border-right: 35px solid #345FE0;
+            border-right: 70px solid #345FE0;
         }
         
         .Icons-Cartoon::after {
-            border-right: 35px solid #2AB6CE;
+            border-right: 70px solid #2AB6CE;
         }
         
         .Icons-Fiction::after {
-            border-right: 35px solid #95D34E;
+            border-right: 70px solid #95D34E;
         }
         
         .Icons-Audio::after {
-            border-right: 35px solid #355FDE;
+            border-right: 70px solid #355FDE;
         }
         
         .Icons-Video::after {
-            border-right: 35px solid #29B6CE;
+            border-right: 70px solid #29B6CE;
         }
         
         .Icons-Other::before {
-            border-left: 35px solid #95D34E;
+            border-left: 70px solid #95D34E;
         }
         
         .Icons-Game::before {
-            border-left: 35px solid #345FE0;
+            border-left: 70px solid #345FE0;
         }
         
         .Icons-Cartoon::before {
-            border-left: 35px solid #2AB6CE;
+            border-left: 70px solid #2AB6CE;
         }
         
         .Icons-Fiction::before {
-            border-left: 35px solid #95D34E;
+            border-left: 70px solid #95D34E;
         }
         
         .Icons-Audio::before {
-            border-left: 35px solid #355FDE;
+            border-left: 70px solid #355FDE;
         }
         
         .Icons-Video::before {
-            border-left: 35px solid #29B6CE;
+            border-left: 70px solid #29B6CE;
         }
         /*#Main_Menu .lanren::before {
             content: "";
             width: 0;
             height: 0;
             position: absolute;
-            left: -35px;
+            left: -70px;
             top: 0;
             border-top: 60px solid transparent;
             border-bottom: 60px solid transparent;
@@ -162,7 +162,7 @@
             width: 0;
             height: 0;
             position: absolute;
-            right: -35px;
+            right: -70px;
             top: 0;
             border-top: 60px solid transparent;
             border-bottom: 60px solid transparent;
@@ -171,10 +171,10 @@
 </head>
 
 <body>
-    <div class="header">Ê∂õÊ∂õÁöÑÂçöÂÆ¢ ‚ïÆ(‚ïØ‚ñΩ‚ï∞)‚ï≠ </div>
+    <div class="header">ÃŒÃŒµƒ≤©øÕ ®r(®s®å®t)®q </div>
     <div id="mainPage">
-        <a href="https://eidors.github.io/compass/" target="_blank">Êåá‰∏úË•øÈíà</a>
-        <a href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">ÊµèËßàÂô®ÊëÑÂÉèÂ§¥ÂíåËØùÁ≠íÊùÉÈôêËÆæÁΩÆ</a>
+        <a href="https://eidors.github.io/compass/" target="_blank">÷∏∂´Œ˜’Î</a>
+        <a href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">‰Ø¿¿∆˜…„œÒÕ∑∫Õª∞Õ≤»®œﬁ…Ë÷√</a>
     </div>
     <div id="Main_Menu" class="Main-Menu text-center">
         <div id="Icons_Other" class="lanren Icons-Other">Other</div>
