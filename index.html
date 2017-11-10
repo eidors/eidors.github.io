@@ -22,10 +22,15 @@
         SalLocalLabels["RTXT_OK"] = "OK";
     </script>
     <style>
+        .opacity-0 {
+            opacity: 0;
+        }
+        
         #Main_Menu {
             position: fixed;
             right: 150px;
             bottom: 150px;
+            line-height: 120px;
         }
         
         .lanren {
@@ -232,20 +237,20 @@
         <a href="https://eidors.github.io/compass/" target="_blank">指东西针</a>
         <a href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">浏览器摄像头和话筒权限设置</a>
     </div>
-    <div id="Main_Menu" class="Main-Menu">
+    <div id="Main_Menu" class="Main-Menu text-center">
         <div id="Icons_Other" class="lanren Icons-Other">Other</div>
         <div id="Icons_Game" class="lanren Icons-Game">Game</div>
         <div id="Icons_Cartoon" class="lanren Icons-Cartoon">Cartoon</div>
         <div id="Icons_Fiction" class="lanren Icons-Fiction">Fiction</div>
         <div id="Icons_Audio" class="lanren Icons-Audio">Audio</div>
-        <div id="Icons_Video" class="lanren Icons-Video">Video</div>
-        <!--<div id="Icons_IP" class="lanren Icons-Video">IP</div>-->
+        <div id="Icons_IP" class="lanren Icons-Video" style="display:block;">IP</div>
+        <div id="Icons_Video" class="lanren Icons-Video opacity-0">Video</div>
     </div>
     <script>
         var resizeTimer = null;
         var IsAnimate = true;
         $(function() {
-            // $Icons_IP = $("#Icons_IP");
+            $Icons_IP = $("#Icons_IP");
             var $Icons_Video = $("#Icons_Video");
             var $Icons_Audio = $("#Icons_Audio");
             var $Icons_Fiction = $("#Icons_Fiction");
@@ -254,11 +259,11 @@
             var $Icons_Other = $("#Icons_Other");
             $Icons_Video.draggable({
                 revert: true,
-                opacity: 0.7,
+                opacity: 1,
                 // distance: 20,
                 // delay: 1000,
                 start: function() {
-                    //$Icons_IP.hide();
+                    $Icons_IP.hide();
                 },
                 drag: function() {
                     var valLeft = $Icons_Video.css("left");
@@ -270,6 +275,7 @@
                     delayAnimate($Icons_Other, valLeft, valTop, 500);
                 },
                 stop: function() {
+                    $Icons_IP.show();
                     var valLeft = $Icons_Video.css("left");
                     var valTop = $Icons_Video.css("top");
                     reStoreIcon($Icons_Audio, valLeft, valTop, 0);
