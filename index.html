@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <title>0.0</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
     <link href="style/Qys_Main.css" rel="stylesheet" />
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://raw.githubusercontent.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js"></script>
+    <script src="utilityScripts/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         if (typeof SalLocalLabels === 'undefined') {
             window.SalLocalLabels = {};
@@ -37,11 +37,11 @@
         <div id="Icons_Fiction" class="lanren Icons-Fiction">Fiction</div>
         <div id="Icons_Audio" class="lanren Icons-Audio">Audio</div>
         <div id="Icons_IP" class="lanren Icons-IP" style="display:block;">IP</div>
-        <div id="Icons_Video" class="lanren Icons-Video opacity-0" onclick="openMainMenu();">Video</div>
+        <div id="Icons_Video" class="lanren Icons-Video opacity-0">Video</div>
     </div>
-    <div class="modal-backdrop fade" id="modal_backdrop" style="display:none;"></div>
+    <div class="modal-backdrop fade" id="modal_backdrop" style="display:none;" onclick="restoreDefault();"></div>
     <script src="utilityScripts/Qyu_Main.js"></script>
-    <script>
+    <!--<script>
         var resizeTimer = null;
         var IsAnimate = true;
         $(function() {
@@ -119,7 +119,7 @@
         }
 
         console.log("If you have any qusation, pls find me.(Email:zft774156938@163.com)");
-    </script>
+    </script>-->
 </body>
 
 </html>

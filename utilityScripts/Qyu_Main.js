@@ -1,4 +1,4 @@
-$(function() {
+$(function(e) {
     var resizeTimer = null;
     var IsAnimate = true;
     var $Icons_IP = $("#Icons_IP");
@@ -8,6 +8,7 @@ $(function() {
     var $Icons_Cartoon = $("#Icons_Cartoon");
     var $Icons_Game = $("#Icons_Game");
     var $Icons_Other = $("#Icons_Other");
+    $Icons_Video.on("click", openMainMenu);
     $Icons_Video.draggable({
         revert: true,
         opacity: 1,
@@ -15,6 +16,7 @@ $(function() {
         // delay: 1000,
         start: function() {
             $Icons_IP.hide();
+            $Icons_Video.off("click", openMainMenu);
         },
         drag: function() {
             var valLeft = $Icons_Video.css("left");
@@ -34,6 +36,10 @@ $(function() {
             reStoreIcon($Icons_Cartoon, valLeft, valTop, 200);
             reStoreIcon($Icons_Game, valLeft, valTop, 300);
             reStoreIcon($Icons_Other, valLeft, valTop, 400);
+            $Icons_Video.on("click", openMainMenu);
+            // $(document).on("click", "#Icons_Video", function(e) {
+            //     openMainMenu(e);
+            // })
         }
     });
     console.log("If you have any qusation, pls find me.(Email:zft774156938@163.com)");
@@ -71,8 +77,45 @@ function openMainMenu() {
     var $Icons_Game = $("#Icons_Game");
     var $Icons_Other = $("#Icons_Other");
     var $Main_Menu = $("#Main_Menu");
-    var $modal_backdrop = $("#modal_backdrop")
+    var $modal_backdrop = $("#modal_backdrop");
+    var $Main_MenuDIV = $("#Main_Menu div");
+
+    $Main_MenuDIV.removeAttr("style");
+    $Icons_Video.draggable("disable");
     $modal_backdrop.show().addClass("in");
     $Main_Menu.removeClass("Main-Menu");
     $Main_Menu.addClass("open-Main-Menu");
+}
+
+function stopBubble(e) {
+    // 如果提供了事件对象，则这是一个非IE浏览器
+    if (e && e.stopPropagation) {
+        // 因此它支持W3C的stopPropagation()方法 
+        e.stopPropagation();
+    } else {
+        // 否则，我们需要使用IE的方式来取消事件冒泡
+        window.event.cancelBubble = true;
+    }
+}
+
+function stopDefault(e) {
+    // 阻止默认浏览器动作(W3C)
+    if (e && e.preventDefault) {
+        e.preventDefault();
+    } else {
+        // IE中阻止函数器默认动作的方式
+        window.event.returnValue = false;
+    }
+    return false;
+}
+
+function restoreDefault() {
+    var $Main_Menu = $("#Main_Menu");
+    var $modal_backdrop = $("#modal_backdrop");
+    var $Icons_Video = $("#Icons_Video");
+
+    $Icons_Video.draggable("enable");
+    $Main_Menu.removeClass("open-Main-Menu");
+    $Main_Menu.addClass("Main-Menu");
+    $modal_backdrop.removeClass("in").hide();
 }
