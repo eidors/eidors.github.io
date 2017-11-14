@@ -8,6 +8,11 @@ $(function(e) {
     var $Icons_Cartoon = $("#Icons_Cartoon");
     var $Icons_Game = $("#Icons_Game");
     var $Icons_Other = $("#Icons_Other");
+    $Icons_Audio.hide();
+    $Icons_Fiction.hide();
+    $Icons_Cartoon.hide();
+    $Icons_Game.hide();
+    $Icons_Other.hide();
     $Icons_Video.on("click", openMainMenu);
     $Icons_Video.draggable({
         revert: true,
@@ -17,6 +22,11 @@ $(function(e) {
         start: function() {
             $Icons_IP.hide();
             $Icons_Video.off("click", openMainMenu);
+            $Icons_Audio.show();
+            $Icons_Fiction.show();
+            $Icons_Cartoon.show();
+            $Icons_Game.show();
+            $Icons_Other.show();
         },
         drag: function() {
             var valLeft = $Icons_Video.css("left");
@@ -60,10 +70,14 @@ function reStoreIcon($objThis, valLeft, valTop, valDelay) {
     var resizeTimer = null;
     resizeTimer = setTimeout(function() {
         $objThis.animate({
-            left: valLeft,
-            top: valTop,
-            duration: "slow"
-        });
+                left: valLeft,
+                top: valTop,
+                duration: "slow"
+            },
+            "fast",
+            function() {
+                $objThis.hide();
+            });
         // IsAnimate = true;
     }, valDelay);
 }
