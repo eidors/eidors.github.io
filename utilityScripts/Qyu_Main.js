@@ -13,6 +13,9 @@ $(function(e) {
     $Icons_Cartoon.hide();
     $Icons_Game.hide();
     $Icons_Other.hide();
+
+
+
     $Icons_Video.on("click", openMainMenu);
     $Icons_Video.draggable({
         revert: true,
@@ -41,6 +44,7 @@ $(function(e) {
             $Icons_IP.show();
             var valLeft = $Icons_Video.css("left");
             var valTop = $Icons_Video.css("top");
+            $(this).removeAttr("style");
             reStoreIcon($Icons_Audio, valLeft, valTop, 0);
             reStoreIcon($Icons_Fiction, valLeft, valTop, 100);
             reStoreIcon($Icons_Cartoon, valLeft, valTop, 200);
@@ -76,6 +80,7 @@ function reStoreIcon($objThis, valLeft, valTop, valDelay) {
             },
             "fast",
             function() {
+                $objThis.removeAttr("style");
                 $objThis.hide();
             });
         // IsAnimate = true;
@@ -94,7 +99,8 @@ function openMainMenu() {
     var $modal_backdrop = $("#modal_backdrop");
     var $Main_MenuDIV = $("#Main_Menu div");
 
-    $Main_MenuDIV.removeAttr("style");
+    // $Main_MenuDIV.removeAttr("style");
+    $Main_MenuDIV.show();
     $Icons_Video.draggable("disable");
     $modal_backdrop.show().addClass("in");
     $Main_Menu.removeClass("Main-Menu");
@@ -127,9 +133,14 @@ function restoreDefault() {
     var $Main_Menu = $("#Main_Menu");
     var $modal_backdrop = $("#modal_backdrop");
     var $Icons_Video = $("#Icons_Video");
+    var $Main_MenuDIV = $("#Main_Menu div");
+    var $Icons_IP = $("#Icons_IP");
 
     $Icons_Video.draggable("enable");
     $Main_Menu.removeClass("open-Main-Menu");
     $Main_Menu.addClass("Main-Menu");
     $modal_backdrop.removeClass("in").hide();
+    $Main_MenuDIV.hide();
+    $Icons_IP.show();
+    $Icons_Video.show();
 }
