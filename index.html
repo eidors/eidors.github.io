@@ -2,16 +2,22 @@
 <html manifest="demo.appcache">
 
 <head>
-    <meta charset="UTF-8">
     <title>╮(╯▽╰)╭</title>
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
     <link href="style/Qys_Main.css" rel="stylesheet" />
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="style/Qys_Main.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script src="utilityScripts/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         if (typeof SalLocalLabels === 'undefined') {
@@ -42,36 +48,53 @@
             </div>
         </div>
         <div class="row clearfix">
-            <div class="col-md-8 column">
-                <div id="mainPage">
-                    <a href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">浏览器摄像头和话筒权限设置</a>
-                </div>
-                <h2>
-                    指东西针
-                </h2>
-                <p>
-                    方位仪，指向的是东西方向。懒得改了，暂时没需求就现在吧！ 0.0
-                </p>
-                <p>
-                    只能在手机端使用，(因为只有手机才会有陀螺仪嘛! 所以不要再问我为什么指针不动的问题了，不解释了。
-                </p>
-                <p>
-                    <a class="btn" href="https://eidors.github.io/compass/" target="_blank">open »</a>
-                </p>
-            </div>
             <div class="col-md-4 column">
-                <h2>
-                    摄像头、话筒调试
-                </h2>
-                <p>
-                    起因是因为要做视频直播的Demo,调试了一下chrome的调用摄像头和话筒的权限。(请各位放心，没有加拍照，也没有传数据回后台，只是一个前端的Demo。至于为什么需要回去摄像头权限，相信你们心理面应该有点B数了。话说只是因为web会有提示而已，难道你们会认为那些没有提示的就没有调用你的摄像头了吗？也太天真了吧。0.0)
-                </p>
-                <p>
-                    (请各位放心，没有加拍照，也没有传数据回后台，只是一个前端的Demo。至于为什么需要回去摄像头权限，相信你们心理面应该有点B数了。话说只是因为web会有提示而已，难道你们会认为那些没有提示的就没有调用你的摄像头了吗？也太天真了吧。0.0)
-                </p>
-                <p>
-                    <a class="btn" href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">open »</a>
-                </p>
+            </div>
+            <div class="col-md-8 column">
+                <div>
+                    <div id="mainPage">
+                        <a href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">浏览器摄像头和话筒权限设置</a>
+                    </div>
+                    <h2>
+                        指东西针
+                    </h2>
+                    <p>
+                        方位仪，指向的是东西方向。懒得改了，暂时没需求就现在吧！ 0.0
+                    </p>
+                    <p>
+                        只能在手机端使用，(因为只有手机才会有陀螺仪嘛! 所以不要再问我为什么指针不动的问题了，不解释了。
+                    </p>
+                    <p>
+                        <a class="btn" href="https://eidors.github.io/compass/" target="_blank">open »</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        摄像头、话筒调试
+                    </h2>
+                    <p>
+                        起因是因为要做视频直播的Demo,调试了一下chrome的调用摄像头和话筒的权限。(请各位放心，没有加拍照，也没有传数据回后台，只是一个前端的Demo。至于为什么需要回去摄像头权限，相信你们心理面应该有点B数了。话说只是因为web会有提示而已，难道你们会认为那些没有提示的就没有调用你的摄像头了吗？也太天真了吧。0.0)
+                    </p>
+                    <p>
+                        (请各位放心，没有加拍照，也没有传数据回后台，只是一个前端的Demo。至于为什么需要回去摄像头权限，相信你们心理面应该有点B数了。话说只是因为web会有提示而已，难道你们会认为那些没有提示的就没有调用你的摄像头了吗？也太天真了吧。0.0)
+                    </p>
+                    <p>
+                        <a class="btn" href="https://eidors.github.io/Direct_Seeding_Test/" target="_blank">open »</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        看完让你彻底搞懂Websocket原理
+                    </h2>
+                    <p>
+                        看到的一篇博客，觉得写的蛮不错的。0。0
+                    </p>
+                    <p>
+                        <a class="btn" href="/views/Qys_Html5_Blogs_1.html" target="_blank">open »</a>
+                    </p>
+                </div>
             </div>
         </div>
         <!--<div class="header">涛涛的博客 ╮(╯▽╰)╭ </div>-->
