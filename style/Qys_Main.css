@@ -1,7 +1,11 @@
+html {
+    font-size: 20px; 
+}
+
 body {
     margin: 0;
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.9rem;
+    font-size: .9rem;
     font-weight: 300;
     line-height: 1.5;
     color: #cfd2da;
@@ -14,12 +18,12 @@ body {
 
 .open-Main-Menu {
     position: fixed;
-    line-height: 120px;
+    line-height: 6rem;
     z-index: 1050;
     right: 50%;
     bottom: 50%;
-    margin-right: 33px;
-    margin-bottom: 60px;
+    margin-right: 1.65rem;
+    margin-bottom: 3rem;
     animation: openMainMenu 1s;
     /* Safari 与 Chrome */
     -webkit-animation: openMainMenu 1s;
@@ -27,8 +31,8 @@ body {
 
 @keyframes openMainMenu {
     from {
-        right: 200px;
-        bottom: 200px;
+        right: 10rem;
+        bottom: 10rem;
     }
     to {
         right: 50%;
@@ -38,8 +42,8 @@ body {
 
 @-webkit-keyframes openMainMenu {
     from {
-        right: 200px;
-        bottom: 200px;
+        right: 10rem;
+        bottom: 10rem;
     }
     to {
         right: 50%;
@@ -48,8 +52,8 @@ body {
 }
 
 .open-Main-Menu .Icons-Video {
-    left: 0px;
-    top: -160px;
+    left: 0rem;
+    top: -8rem;
     opacity: 1;
     animation: openVideo 1s;
     /* Safari 与 Chrome */
@@ -58,29 +62,29 @@ body {
 
 @keyframes openVideo {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 0px;
-        top: -160px;
+        left: 0rem;
+        top: -8rem;
     }
 }
 
 @-webkit-keyframes openVideo {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 0px;
-        top: -160px;
+        left: 0rem;
+        top: -8rem;
     }
 }
 
 .open-Main-Menu .Icons-Audio {
-    left: 138px;
-    top: -80px;
+    left: 6.9rem;
+    top: -4rem;
     opacity: 1;
     animation: openAudio 1s;
     /* Safari 与 Chrome */
@@ -89,29 +93,29 @@ body {
 
 @keyframes openAudio {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 138px;
-        top: -80px;
+        left: 6.9rem;
+        top: -4rem;
     }
 }
 
 @-webkit-keyframes openAudio {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 138px;
-        top: -80px;
+        left: 6.9rem;
+        top: -4rem;
     }
 }
 
 .open-Main-Menu .Icons-Fiction {
-    left: 138px;
-    top: 80px;
+    left: 6.9rem;
+    top: 4rem;
     opacity: 1;
     animation: openFiction 1s;
     -webkit-animation: openFiction 1s;
@@ -119,29 +123,29 @@ body {
 
 @keyframes openFiction {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 138px;
-        top: 80px;
+        left: 6.9rem;
+        top: 4rem;
     }
 }
 
 @-webkit-keyframes openFiction {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 138px;
-        top: 80px;
+        left: 6.9rem;
+        top: 4rem;
     }
 }
 
 .open-Main-Menu .Icons-Cartoon {
-    left: 0px;
-    top: 160px;
+    left: 0rem;
+    top: 8rem;
     opacity: 1;
     animation: openCartoon 1s;
     -webkit-animation: openCartoon 1s;
@@ -149,29 +153,29 @@ body {
 
 @keyframes openCartoon {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 0px;
-        top: 160px;
+        left: 0rem;
+        top: 8rem;
     }
 }
 
 @-webkit-keyframes openCartoon {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: 0px;
-        top: 160px;
+        left: 0rem;
+        top: 8rem;
     }
 }
 
 .open-Main-Menu .Icons-Game {
-    left: -138px;
-    top: 80px;
+    left: -6.9rem;
+    top: 4rem;
     opacity: 1;
     animation: openGame 1s;
     -webkit-animation: openGame 1s;
@@ -179,29 +183,29 @@ body {
 
 @keyframes openGame {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: -138px;
-        top: 80px;
+        left: -6.9rem;
+        top: 4rem;
     }
 }
 
 @-webkit-keyframes openGame {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: -138px;
-        top: 80px;
+        left: -6.9rem;
+        top: 4rem;
     }
 }
 
 .open-Main-Menu .Icons-Other {
-    left: -138px;
-    top: -80px;
+    left: -6.9rem;
+    top: -4rem;
     opacity: 1;
     animation: openOther 1s;
     -webkit-animation: openOther 1s;
@@ -209,42 +213,42 @@ body {
 
 @keyframes openOther {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: -138px;
-        top: -80px;
+        left: -6.9rem;
+        top: -4rem;
     }
 }
 
 @-webkit-keyframes openOther {
     from {
-        left: 0px;
-        top: 0px;
+        left: 0rem;
+        top: 0rem;
     }
     to {
-        left: -138px;
-        top: -80px;
+        left: -6.9rem;
+        top: -4rem;
     }
 }
 
 .Main-Menu {
     position: fixed;
-    right: 200px;
-    bottom: 200px;
-    line-height: 120px;
+    right: 10rem;
+    bottom: 10rem;
+    line-height: 6rem;
     z-index: 1050;
-    margin-right: 33px;
-    margin-bottom: 120px;
+    margin-right: 1.65rem;
+    margin-bottom: 6rem;
 }
 
 .lanren {
     position: absolute;
-    width: 66px;
-    height: 120px;
+    width: 3.3rem;
+    height: 6rem;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .lanren::after {
@@ -252,10 +256,10 @@ body {
     width: 0;
     height: 0;
     position: absolute;
-    left: -35px;
+    left: -1.75rem;
     top: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
+    border-top: 3rem solid transparent;
+    border-bottom: 3rem solid transparent;
 }
 
 .lanren::before {
@@ -263,10 +267,10 @@ body {
     width: 0;
     height: 0;
     position: absolute;
-    right: -35px;
+    right: -1.75rem;
     top: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
+    border-top: 3rem solid transparent;
+    border-bottom: 3rem solid transparent;
 }
 
 .Icons-Other {
@@ -298,59 +302,59 @@ body {
 }
 
 .Icons-IP::after {
-    border-right: 35px solid #19274D;
+    border-right: 1.75rem solid #19274D;
 }
 
 .Icons-IP::before {
-    border-left: 35px solid #19274D;
+    border-left: 1.75rem solid #19274D;
 }
 
 .Icons-Other::after {
-    border-right: 35px solid #95D34E;
+    border-right: 1.75rem solid #95D34E;
 }
 
 .Icons-Game::after {
-    border-right: 35px solid #345FE0;
+    border-right: 1.75rem solid #345FE0;
 }
 
 .Icons-Cartoon::after {
-    border-right: 35px solid #2AB6CE;
+    border-right: 1.75rem solid #2AB6CE;
 }
 
 .Icons-Fiction::after {
-    border-right: 35px solid #95D34E;
+    border-right: 1.75rem solid #95D34E;
 }
 
 .Icons-Audio::after {
-    border-right: 35px solid #355FDE;
+    border-right: 1.75rem solid #355FDE;
 }
 
 .Icons-Video::after {
-    border-right: 35px solid #29B6CE;
+    border-right: 1.75rem solid #29B6CE;
 }
 
 .Icons-Other::before {
-    border-left: 35px solid #95D34E;
+    border-left: 1.75rem solid #95D34E;
 }
 
 .Icons-Game::before {
-    border-left: 35px solid #345FE0;
+    border-left: 1.75rem solid #345FE0;
 }
 
 .Icons-Cartoon::before {
-    border-left: 35px solid #2AB6CE;
+    border-left: 1.75rem solid #2AB6CE;
 }
 
 .Icons-Fiction::before {
-    border-left: 35px solid #95D34E;
+    border-left: 1.75rem solid #95D34E;
 }
 
 .Icons-Audio::before {
-    border-left: 35px solid #355FDE;
+    border-left: 1.75rem solid #355FDE;
 }
 
 .Icons-Video::before {
-    border-left: 35px solid #29B6CE;
+    border-left: 1.75rem solid #29B6CE;
 }
 
 
@@ -659,455 +663,455 @@ body {
 /* Size classes */
 
 .text-size9 {
-    font-size: 0.5625em !important;
+    font-size: .45rem !important;
 }
 
 .text-size10 {
-    font-size: 0.625em !important;
+    font-size: .5rem !important;
 }
 
 .text-size11 {
-    font-size: 0.6875em !important;
+    font-size: .55rem !important;
 }
 
 .text-size12 {
-    font-size: 0.75em !important;
+    font-size: .6rem !important;
 }
 
 .text-size13 {
-    font-size: 0.8125em !important;
+    font-size: .65rem !important;
 }
 
 .text-size14 {
-    font-size: 0.875em !important;
+    font-size: .7rem !important;
 }
 
 .text-size15 {
-    font-size: 0.9375em !important;
+    font-size: .75rem !important;
 }
 
 .text-size16 {
-    font-size: 1em !important;
+    font-size: .8rem !important;
 }
 
 .text-size17 {
-    font-size: 1.0625em !important;
+    font-size: .85rem !important;
 }
 
 .text-size18 {
-    font-size: 1.125em !important;
+    font-size: .9rem !important;
 }
 
 .text-size19 {
-    font-size: 1.1875em !important;
+    font-size: .95rem !important;
 }
 
 .text-size20 {
-    font-size: 1.25em !important;
+    font-size: 1rem !important;
 }
 
 .text-size21 {
-    font-size: 1.3125em !important;
+    font-size: 1.05rem !important;
 }
 
 .text-size22 {
-    font-size: 1.375em !important;
+    font-size: 1.1rem !important;
 }
 
 .text-size24 {
-    font-size: 1.5em !important;
+    font-size: 1.2rem !important;
 }
 
 .text-size25 {
-    font-size: 1.5625em !important;
+    font-size: 1.2.5rem !important;
 }
 
 .text-size26 {
-    font-size: 1.625em !important;
+    font-size: 1.3rem !important;
 }
 
 .text-size28 {
-    font-size: 1.75em !important;
+    font-size: 1.4rem !important;
 }
 
 .text-size30 {
-    font-size: 1.875em !important;
+    font-size: 1.5rem !important;
 }
 
 .text-size32 {
-    font-size: 2em !important;
+    font-size: 1.6rem !important;
 }
 
 .border-radius1 {
-    border-radius: 1px !important;
+    border-radius: .05rem !important;
 }
 
 .border-radius2 {
-    border-radius: 2px !important;
+    border-radius: .1rem !important;
 }
 
 .border-radius3 {
-    border-radius: 3px !important;
+    border-radius: .15rem !important;
 }
 
 .border-radius4 {
-    border-radius: 4px !important;
+    border-radius: .2rem !important;
 }
 
 .border-radius5 {
-    border-radius: 5px !important;
+    border-radius: .25rem !important;
 }
 
 .margin-top0 {
-    margin-top: 0px !important;
+    margin-top: 0rem !important;
 }
 
 .margin-top1 {
-    margin-top: 1px !important;
+    margin-top: .05rem !important;
 }
 
 .margin-top2 {
-    margin-top: 2px !important;
+    margin-top: .1rem !important;
 }
 
 .margin-top3 {
-    margin-top: 3px !important;
+    margin-top: .15rem !important;
 }
 
 .margin-top4 {
-    margin-top: 4px !important;
+    margin-top: .2rem !important;
 }
 
 .margin-top5 {
-    margin-top: 5px !important;
+    margin-top: .25rem !important;
 }
 
 .margin-top6 {
-    margin-top: 6px !important;
+    margin-top: .3rem !important;
 }
 
 .margin-top7 {
-    margin-top: 7px !important;
+    margin-top: .35rem !important;
 }
 
 .margin-top8 {
-    margin-top: 8px !important;
+    margin-top: .4rem !important;
 }
 
 .margin-top9 {
-    margin-top: 9px !important;
+    margin-top: .45rem !important;
 }
 
 .margin-top10 {
-    margin-top: 10px !important;
+    margin-top: .5rem !important;
 }
 
 .margin-top15 {
-    margin-top: 15px !important;
+    margin-top: .75rem !important;
 }
 
 .margin-top20 {
-    margin-top: 20px !important;
+    margin-top: 1rem !important;
 }
 
 .margin-top30 {
-    margin-top: 30px !important;
+    margin-top: 1.5rem !important;
 }
 
 .margin-top50 {
-    margin-top: 50px !important;
+    margin-top: 2.5rem !important;
 }
 
 .margin-bottom0 {
-    margin-bottom: 0px !important;
+    margin-bottom: 0rem !important;
 }
 
 .margin-bottom1 {
-    margin-bottom: 1px !important;
+    margin-bottom: .05rem !important;
 }
 
 .margin-bottom2 {
-    margin-bottom: 2px !important;
+    margin-bottom: .1rem !important;
 }
 
 .margin-bottom3 {
-    margin-bottom: 3px !important;
+    margin-bottom: .15rem !important;
 }
 
 .margin-bottom4 {
-    margin-bottom: 4px !important;
+    margin-bottom: .2rem !important;
 }
 
 .margin-bottom5 {
-    margin-bottom: 5px !important;
+    margin-bottom: .25rem !important;
 }
 
 .margin-bottom6 {
-    margin-bottom: 6px !important;
+    margin-bottom: .3rem !important;
 }
 
 .margin-bottom7 {
-    margin-bottom: 7px !important;
+    margin-bottom: .35rem !important;
 }
 
 .margin-bottom8 {
-    margin-bottom: 8px !important;
+    margin-bottom: .4rem !important;
 }
 
 .margin-bottom9 {
-    margin-bottom: 9px !important;
+    margin-bottom: .45rem !important;
 }
 
 .margin-bottom10 {
-    margin-bottom: 10px !important;
+    margin-bottom: .5rem !important;
 }
 
 .margin-bottom15 {
-    margin-bottom: 15px !important;
+    margin-bottom: .75rem !important;
 }
 
 .margin-bottom20 {
-    margin-bottom: 20px !important;
+    margin-bottom: 1rem !important;
 }
 
 .margin-bottom30 {
-    margin-bottom: 30px !important;
+    margin-bottom: 1.5rem !important;
 }
 
 .margin-bottom50 {
-    margin-bottom: 50px !important;
+    margin-bottom: 2.5rem !important;
 }
 
 .margin-left0 {
-    margin-left: 0px !important;
+    margin-left: 0rem !important;
 }
 
 .margin-left1 {
-    margin-left: 1px !important;
+    margin-left: .05rem !important;
 }
 
 .margin-left2 {
-    margin-left: 2px !important;
+    margin-left: .1rem !important;
 }
 
 .margin-left3 {
-    margin-left: 3px !important;
+    margin-left: .15rem !important;
 }
 
 .margin-left4 {
-    margin-left: 4px !important;
+    margin-left: .2rem !important;
 }
 
 .margin-left5 {
-    margin-left: 5px !important;
+    margin-left: .25rem !important;
 }
 
 .margin-left6 {
-    margin-left: 6px !important;
+    margin-left: .3rem !important;
 }
 
 .margin-left7 {
-    margin-left: 7px !important;
+    margin-left: .35rem !important;
 }
 
 .margin-left8 {
-    margin-left: 8px !important;
+    margin-left: .4rem !important;
 }
 
 .margin-left9 {
-    margin-left: 9px !important;
+    margin-left: .45rem !important;
 }
 
 .margin-left10 {
-    margin-left: 10px !important;
+    margin-left: .5rem !important;
 }
 
 .margin-left15 {
-    margin-left: 15px !important;
+    margin-left: .75rem !important;
 }
 
 .margin-left20 {
-    margin-left: 20px !important;
+    margin-left: 1rem !important;
 }
 
 .margin-left30 {
-    margin-left: 30px !important;
+    margin-left: 1.5rem !important;
 }
 
 .margin-left50 {
-    margin-left: 50px !important;
+    margin-left: 2.5rem !important;
 }
 
 .margin-right0 {
-    margin-right: 0px !important;
+    margin-right: 0rem !important;
 }
 
 .margin-right1 {
-    margin-right: 1px !important;
+    margin-right: .05rem !important;
 }
 
 .margin-right2 {
-    margin-right: 2px !important;
+    margin-right: .1rem !important;
 }
 
 .margin-right3 {
-    margin-right: 3px !important;
+    margin-right: .15rem !important;
 }
 
 .margin-right4 {
-    margin-right: 4px !important;
+    margin-right: .2rem !important;
 }
 
 .margin-right5 {
-    margin-right: 5px !important;
+    margin-right: .25rem !important;
 }
 
 .margin-right6 {
-    margin-right: 6px !important;
+    margin-right: .3rem !important;
 }
 
 .margin-right7 {
-    margin-right: 7px !important;
+    margin-right: .35rem !important;
 }
 
 .margin-right8 {
-    margin-right: 8px !important;
+    margin-right: .4rem !important;
 }
 
 .margin-right9 {
-    margin-right: 9px !important;
+    margin-right: .45rem !important;
 }
 
 .margin-right10 {
-    margin-right: 10px !important;
+    margin-right: .5rem !important;
 }
 
 .margin-right15 {
-    margin-right: 15px !important;
+    margin-right: .75rem !important;
 }
 
 .margin-right20 {
-    margin-right: 20px !important;
+    margin-right: 1rem !important;
 }
 
 .margin-right30 {
-    margin-right: 30px !important;
+    margin-right: 1.5rem !important;
 }
 
 .margin-right50 {
-    margin-right: 50px !important;
+    margin-right: 2.5rem !important;
 }
 
 .padding-top0 {
-    padding-top: 0px !important;
+    padding-top: 0rem !important;
 }
 
 .padding-top5 {
-    padding-top: 5px !important;
+    padding-top: .25rem !important;
 }
 
 .padding-top10 {
-    padding-top: 10px !important;
+    padding-top: .5rem !important;
 }
 
 .padding-top15 {
-    padding-top: 15px !important;
+    padding-top: .75rem !important;
 }
 
 .padding-top20 {
-    padding-top: 20px !important;
+    padding-top: 1rem !important;
 }
 
 .padding-top30 {
-    padding-top: 30px !important;
+    padding-top: 1.5rem !important;
 }
 
 .padding-top50 {
-    padding-top: 50px !important;
+    padding-top: 2.5rem !important;
 }
 
 .padding-bottom0 {
-    padding-bottom: 0px !important;
+    padding-bottom: 0rem !important;
 }
 
 .padding-bottom5 {
-    padding-bottom: 5px !important;
+    padding-bottom: .25rem !important;
 }
 
 .padding-bottom10 {
-    padding-bottom: 10px !important;
+    padding-bottom: .5rem !important;
 }
 
 .padding-bottom15 {
-    padding-bottom: 15px !important;
+    padding-bottom: .75rem !important;
 }
 
 .padding-bottom20 {
-    padding-bottom: 20px !important;
+    padding-bottom: 1rem !important;
 }
 
 .padding-bottom30 {
-    padding-bottom: 30px !important;
+    padding-bottom: 1.5rem !important;
 }
 
 .padding-bottom50 {
-    padding-bottom: 50px !important;
+    padding-bottom: 2.5rem !important;
 }
 
 .padding-left0 {
-    padding-left: 0px !important;
+    padding-left: 0rem !important;
 }
 
 .padding-left5 {
-    padding-left: 5px !important;
+    padding-left: .25rem !important;
 }
 
 .padding-left10 {
-    padding-left: 10px !important;
+    padding-left: .5rem !important;
 }
 
 .padding-left15 {
-    padding-left: 15px !important;
+    padding-left: .75rem !important;
 }
 
 .padding-left20 {
-    padding-left: 20px !important;
+    padding-left: 1rem !important;
 }
 
 .padding-left30 {
-    padding-left: 30px !important;
+    padding-left: 1.5rem !important;
 }
 
 .padding-left50 {
-    padding-left: 50px !important;
+    padding-left: 2.5rem !important;
 }
 
 .padding-right0 {
-    padding-right: 0px !important;
+    padding-right: 0rem !important;
 }
 
 .padding-right5 {
-    padding-right: 5px !important;
+    padding-right: .25rem !important;
 }
 
 .padding-right10 {
-    padding-right: 10px !important;
+    padding-right: .5rem !important;
 }
 
 .padding-right15 {
-    padding-right: 15px !important;
+    padding-right: .75rem !important;
 }
 
 .padding-right20 {
-    padding-right: 20px !important;
+    padding-right: 1rem !important;
 }
 
 .padding-right30 {
-    padding-right: 30px !important;
+    padding-right: 1.5rem !important;
 }
 
 .padding-right50 {
-    padding-right: 50px !important;
+    padding-right: 2.5rem !important;
 }
 
 .overflow-x-hidden {
